@@ -27,7 +27,7 @@ const PASSWORD = 'password'
 
 const ladder = new Sequelize(DB_NAME, USER_NAME, PASSWORD, {
   host: 'localhost',
-  dialect: 'mariabd',
+  dialect: 'mysql',
   define: {
     timestamps: false
 }
