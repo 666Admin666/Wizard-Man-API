@@ -23,7 +23,7 @@ app.use(function (req, res, next) {
 //const DB_NAME = 'wizardman'
 const DB_NAME = 'd117276_db'
 const USER_NAME = 'root'
-const PASSWORD = '*DECDB850A5C79047C2B09CACD1BACEDF6EF89053'
+const PASSWORD = ''
 //const PASSWORD = 'password'
 
 const ladder = new Sequelize(DB_NAME, USER_NAME, PASSWORD, {
