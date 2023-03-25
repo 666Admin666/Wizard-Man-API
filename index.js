@@ -20,8 +20,7 @@ app.use(function (req, res, next) {
     next();
 });
 
-//const DB_NAME = 'wizardman'
-const DB_NAME = 'd117276_db'
+const DB_NAME = 'wizardman'
 const USER_NAME = 'root'
 const PASSWORD = ''
 //const PASSWORD = 'password'
