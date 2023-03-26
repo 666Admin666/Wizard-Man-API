@@ -25,7 +25,7 @@ const USER_NAME = 'root'
 //const PASSWORD = ''
 const PASSWORD = 'password'
 
-const ladder = new Sequelize(DB_NAME, USER_NAME, PASSWORD, {
+const ladder = new Sequelize(DB_NAME, USER_NAME, {
   host: 'localhost',
   dialect: 'mysql',
   define: {
