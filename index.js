@@ -1,24 +1,17 @@
 import { Sequelize } from "sequelize";
 import express from "express"
+const app = express()
+var cors = require('cors')
+
 
 const PORT = 4000;
 
 
-const app = express()
 app.use(express.json())
-app.use(function (req, res, next) {
 
-    // Website you wish to allow to connect
-    res.setHeader('Access-Control-Allow-Origin', 'https://wizard-man.site/','https://ladder.wizard-man.site/');
-    // Request methods you wish to allow
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT');
-    // Request headers you wish to allow
-    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-    // Set to true if you need the website to include cookies in the requests sent
-    // to the API (e.g. in case you use sessions)
-    res.setHeader('Access-Control-Allow-Credentials', false);
-    next();
-});
+app.use(
+    cors({origin: ['https://wizard-man.site/', 'https://ladder.wizard-man.site/']})
+  );
 
 const DB_NAME = 'wizardman'
 const USER_NAME = 'root'
