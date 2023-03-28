@@ -9,7 +9,7 @@ app.use(express.json())
 app.use(function (req, res, next) {
 
     // Website you wish to allow to connect
-    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Origin', 'https://wizard-man.site/','https://ladder.wizard-man.site/');
     // Request methods you wish to allow
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT');
     // Request headers you wish to allow
